@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Products - Trial Shopping Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="../index.html">Urban Heart</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="admin.html">Site Analytics</a></li>
+                <li><a href="manage-products.html">Manage Products</a></li>
+                <li><a href="admin.html">Home</a></li>
+                <li><a href="admin-products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li style="display: block;" id="profile-section">
+                    <a href="#" id="profile-dropdown">Profile ▼</a>
+                    <ul id="profile-menu" class="dropdown-menu">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="#" id="logout">Logout</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <header id="header">
+        <h1>Admin Products</h1>
+    </header>
+
+    <main>
+    <ul id="existing-products"></ul>
+    <button id="delete-all">Delete All Items</button>
+
+    </main>
+    <script src="../navbar.js"></script>
+    <script src="../products.js"></script> <!-- Ensure this script is included to load products -->
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>

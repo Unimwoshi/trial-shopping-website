@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Trial Shopping Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="index.html">Urban Heart</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#" id="profile-dropdown">Profile ▼</a>
+                    <ul id="profile-menu" class="dropdown-menu">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="#" id="logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1>User Profile</h1>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <img src="placeholder.jpg" alt="Profile Picture" id="profile-picture">
+            <h2 id="username-display">Username: </h2>
+            <button id="edit-profile">Edit Profile</button>
+        </div>
+    </main>
+    <script src="profile.js"></script>
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Urban Heart Theme */
+body {
+    font-family: Poppins, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #E60000;
+}
+
+header {
+    background: #1A1A1A;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #E60000;
+}
+
+main {
+    padding: 30px;
+    background-color: #1A1A1A;
+}
+
+a {
+    color: #E60000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5A7D9A;
+}
+
+button {
+    background-color: #E60000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5A7D9A;
+}
+
+.secondary-text {
+    color: #808080;
+}
+
+.warm-accent {
+    color: #4D2600;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #1A1A1A;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #E60000;
+}
+
+.navbar-brand a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #E60000;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Product Styles */
+.product-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(25% - 20px); /* Four items per row */
+    display: inline-block;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#existing-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cart-items-list{
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    
+    background-color: green;
+
+}
